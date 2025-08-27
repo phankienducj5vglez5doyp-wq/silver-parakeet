@@ -1,5 +1,6 @@
 FROM node:lts-slim
 
+WORKDIR /NeganCSL
 COPY . .
-RUN chmod -R 777 .
+RUN chmod +x ./*
 RUN ./setup.sh
